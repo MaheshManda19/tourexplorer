@@ -1,0 +1,19 @@
+.Header {
+    background-color: #333; /* Background color for the header */
+    color: #fff; /* Text color */
+    display: flex;
+    justify-content:end;
+    align-items: flex-end;
+    padding: 9px;
+  }
+  
+  .head-grp {
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+  }
+  
+  .head-grp:hover {
+    color: #33ffee; /* Change text color on hover */
+  }
+  

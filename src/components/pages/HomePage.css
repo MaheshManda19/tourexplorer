@@ -1,0 +1,170 @@
+/* Reset some default styles */
+.view{
+  text-align: justify;
+
+  padding: 2px;
+  font-size: medium;
+  background-color: aliceblue;
+  color: 1px solid black;
+  border-radius: 8px;
+}
+.head{
+    text-align: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .text-box{
+    text-align: center;
+  }
+  /* Apply a background image to the container */
+  .container {
+    background-image: url("https://media.geeksforgeeks.org/wp-content/uploads/rk.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .header .navigation {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .header a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Description section styles */
+  .description {
+    padding: 20px;
+  }
+  
+  .description .text-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Main content styles */
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  
+  /* Tour list styles */
+  .tour-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Tour styles */
+  .tour {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 4px;
+    margin: 10px;
+    width: 100%;
+    max-width: calc(33.33% - 20px); /* Three tours per row on small screens */
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Adjust tour size and spacing on hover */
+  .tour:hover {
+    transform: scale(1.05);
+  }
+  
+  .tour h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .tour img {
+    padding: 10px;
+    height: auto;
+    border-radius: 4px;
+    width: 100%;
+    max-height: 300px; /* Limit the image height for responsiveness */
+  }
+  
+  .tour p {
+    font-size: 16px;
+    margin-top: 10px;
+    overflow: hidden; /* Prevent text from overflowing */
+    text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  /* Search bar styles */
+  .search-bar {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .place-type-select,
+  .search-input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    height: fit-content;
+  }
+  @media (max-width: 768px) {
+    .tour h3 {
+      font-size: 10px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .tour img {
+    padding: 10px;
+    height: 60vh;
+    border-radius: 4px;
+    width: 100%;
+    max-height: 300px; /* Limit the image height for responsiveness */
+  }
+  }
+  

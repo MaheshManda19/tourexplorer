@@ -1,0 +1,65 @@
+/* Updated TourDetail.css */
+
+.tour-detail {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on small screens */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .left-container {
+    width: 100%; /* Full width for smaller screens */
+    padding-right: 0; /* No padding on smaller screens */
+    margin-bottom: 20px; /* Add margin between image and content */
+  }
+  
+  .left-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .tour-detail h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .tour-detail p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .back-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (min-width: 768px) {
+    /* Apply the following styles for screens larger than or equal to 768px */
+    .tour-detail {
+      flex-direction: row; /* Display items side by side on larger screens */
+    }
+  
+    .left-container {
+      flex: 1; /* Occupy 1/3 of the horizontal space */
+      padding-right: 20px;
+      margin-bottom: 0; /* No margin between image and content */
+    }
+  
+    .right-container {
+      flex: 2; /* Occupy 2/3 of the horizontal space */
+    }
+  }
+  

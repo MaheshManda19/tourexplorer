@@ -1,0 +1,39 @@
+
+/* About.css */
+.about-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-page h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .about-page p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .star-button {
+    font-size: 24px;
+    color: gray; /* Default color for empty stars */
+    cursor: pointer;
+    transition: color 0.2s; /* Smooth color transition on hover and click */
+    margin-right: 5px;
+  }
+  
+  .star-button.active {
+    color: gold; /* Color for filled stars */
+  }
+  
+  .star-button:hover {
+    color: gold; /* Highlight on hover */
+  }
+  
